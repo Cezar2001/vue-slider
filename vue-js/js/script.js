@@ -25,7 +25,7 @@ new Vue ({
             },
         ],
         currentIndex: 0,
-        circle: 0,    
+        // circle: true,    
     },
     methods: {
         nextPhoto: function () {
@@ -43,12 +43,14 @@ new Vue ({
                 this.currentIndex = this.immage.length - 1;
             }
         },
-        circleColor: function () {
-            if(this.currentIndex = circle) {
-                this.circle = white;
-            } else {
-                this.circle = grey;
-            }
-        }  
+        // circleColor: function () {
+        // //     if(this.circle = true) {
+        // //         this.circle = white;
+        // //     } else {
+        // //         this.circle = grey;
+        // //     }
+
+        // // this.circle = !this.circle;
+        // }  
     }
 })

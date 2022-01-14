@@ -30,7 +30,8 @@
         
 
         <div v-for="(circle, index) in immage" class="circle-container">
-            <div :class="['circle', currentIndex == circle ? 'white' : 'grey']"></div>
+            <div :class="['circle', currentIndex == circle ? 'active' : 'disable']"></div>
+
         </div>
 
     </div>
