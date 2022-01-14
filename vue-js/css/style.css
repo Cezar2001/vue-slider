@@ -10,11 +10,23 @@
     background-repeat: no-repeat;
 }
 
-/* .photoONe{
-    background-image: url("https://th.bing.com/th/id/OIP.NymHNT6k4ZTrI7oh1M32QAHaDe?pid=ImgDet&rs=1");
+.circle-container{
+    display: inline-block;
 }
 
-.photo-2{
-    background-image: url("https://th.bing.com/th/id/R.0420c7716b8295235a80df8289d2e339?rik=SMKV6LNIM%2fW9Og&riu=http%3a%2f%2fwww.audicafe.it%2fwp-content%2fuploads%2f2020%2f04%2f91748591_3003198719741530_2817160248781963264_o.jpg&ehk=5njihZA9j4XhJ0gPq2iZaXi0WyWv9rFTPtkToFefaMY%3d&risl=&pid=ImgRaw&r=0");
-} */
+.circle{
+    border: 2px black solid;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    color: #888;
+    margin: 0 10px;
+}
 
+.grey{
+    color: blue;
+}
+
+.white{
+    color: red;
+}

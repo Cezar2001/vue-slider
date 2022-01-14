@@ -24,14 +24,31 @@ new Vue ({
                 photo: 'https://th.bing.com/th/id/R.188e976d8d0e7f9567a6db20cb88169f?rik=Cux0T8HEwVQmfA&pid=ImgRaw&r=0'
             },
         ],
-        currentIndex = 0,    
+        currentIndex: 0,
+        circle: 0,    
     },
     methods: {
         nextPhoto: function () {
-            this.currentIndex++;
+            if(this.currentIndex < this.immage.length - 1) {
+                this.currentIndex++;
+            } else {
+                this.currentIndex = 0;
+            }
+            
         },
         prevPhoto: function () {
-            this.currentIndex--;
-        }
-    }   
+            if(this.currentIndex >= 1) {
+                this.currentIndex--;
+            } else {
+                this.currentIndex = this.immage.length - 1;
+            }
+        },
+        circleColor: function () {
+            if(this.currentIndex = circle) {
+                this.circle = white;
+            } else {
+                this.circle = grey;
+            }
+        }  
+    }
 })

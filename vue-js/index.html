@@ -14,24 +14,24 @@
 <body>
     
     <div id="app">
-        <!-- <div :class="img-container">
-            <div>{{immage.photo}}</div>
-        </div> -->
 
-        <div v-for = "img in immage" class="img-container"> 
-
-            <div> {{ immage[currentIndex].photo }} </div>
-
-            <div @click = "prevPhoto">
-                <i class="fas fa-arrow-left"></i>
-            </div>
-
-            <div @click = "nextPhoto">
-                <i class="fas fa-arrow-right"></i>
-            </div>
+        <div class="img-container"> 
+            <img :src="immage[currentIndex].photo" class="img-container">
+        </div>
+        
+        <div @click = "prevPhoto">
+            <i class="fas fa-arrow-left"></i>
         </div>
 
+        <div @click = "nextPhoto">
+            <i class="fas fa-arrow-right"></i>
+        </div>
 
+        
+
+        <div v-for="(circle, index) in immage" class="circle-container">
+            <div :class="['circle', currentIndex == circle ? 'white' : 'grey']"></div>
+        </div>
 
     </div>
 
