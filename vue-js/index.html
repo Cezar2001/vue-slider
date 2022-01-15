@@ -15,23 +15,21 @@
     
     <div id="app">
 
-        <div class="img-container"> 
+        <div> 
             <img :src="immage[currentIndex].photo" class="img-container">
         </div>
         
-        <div @click = "prevPhoto">
+        <div @click = "prevPhoto" class="arrow">
             <i class="fas fa-arrow-left"></i>
         </div>
 
-        <div @click = "nextPhoto">
-            <i class="fas fa-arrow-right"></i>
-        </div>
-
-        
-
         <div v-for="(circle, index) in immage" class="circle-container">
             <div :class="['circle', currentIndex == circle ? 'active' : 'disable']"></div>
+            
+        </div>
 
+        <div @click = "nextPhoto" class="arrow">
+            <i class="fas fa-arrow-right"></i>
         </div>
 
     </div>
