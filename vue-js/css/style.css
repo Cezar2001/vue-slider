@@ -23,17 +23,17 @@
     width: 15px;
     height: 15px;
     border-radius: 50%;
-    color: #888;
+    background-color: #888;
     margin: 0 10px;
 }
 
-.grey{
-    color: blue;
+.active{
+    background-color: yellow;
 }
 
-.white{
-    color: red;
-}
+/* .disable{
+    background-color: #888;
+} */
 
 .fas{
     background-color: #999;

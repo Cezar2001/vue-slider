@@ -24,8 +24,10 @@
         </div>
 
         <div v-for="(circle, index) in immage" class="circle-container">
-            <div :class="['circle', currentIndex == circle ? 'active' : 'disable']"></div>
-            
+            <div 
+            :class="['circle', index === currentIndex ? 'active' : 'disable']"
+            @click="currentImage(index)">
+            </div>
         </div>
 
         <div @click = "nextPhoto" class="arrow">

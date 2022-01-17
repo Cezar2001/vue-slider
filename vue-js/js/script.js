@@ -24,8 +24,7 @@ new Vue ({
                 photo: 'https://th.bing.com/th/id/R.188e976d8d0e7f9567a6db20cb88169f?rik=Cux0T8HEwVQmfA&pid=ImgRaw&r=0'
             },
         ],
-        currentIndex: 0,
-        // circle: true,    
+        currentIndex: 0,    
     },
     methods: {
         nextPhoto: function () {
@@ -43,14 +42,9 @@ new Vue ({
                 this.currentIndex = this.immage.length - 1;
             }
         },
-        // circleColor: function () {
-        // //     if(this.circle = true) {
-        // //         this.circle = white;
-        // //     } else {
-        // //         this.circle = grey;
-        // //     }
+        currentImage: function (i) {
+            this.currentIndex = i;
+        }
 
-        // // this.circle = !this.circle;
-        // }  
     }
 })
